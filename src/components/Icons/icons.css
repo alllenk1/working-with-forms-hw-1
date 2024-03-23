@@ -1,0 +1,33 @@
+.Form {
+    position: absolute;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    width: 320px;
+
+    border: 1px solid lightgray;
+    border-radius: 15px;
+}
+
+.Form-Icon {
+    position: absolute;
+}
+
+.Form-Input {
+    width: 100px;
+    height: 55px;
+}
+
+.Form-ButtonBlock {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.Form-Button {
+    height: 55px;
+    width: 100%;
+}

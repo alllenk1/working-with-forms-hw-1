@@ -1,4 +1,8 @@
 .App {
-  margin-left: 8 px;
+  position: relative;
+
+  height: 100vh;
+
+  margin-left: 8px;
 }
 

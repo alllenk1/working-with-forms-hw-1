@@ -1,20 +1,38 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
+import type { MouseEvent } from "react";
 
 import { cnApp } from './App.classname';
-import { Figures } from './components/Figures/Figures'
+import { Icons } from './components/Icons/Icons'
  
 import './App.css';
 
+const DEFAULT_COORDS = [0, 0];
+
 const App = () => {
-  return (
-    <div className={cnApp()}>
-      <h1 className={cnApp('Title')}>8.3 Работа с формами в React</h1>
+    const [isFormOpen, setFormOpen] = useState(false);
+    const [coords, setCoords] = useState(DEFAULT_COORDS);
+    const [x, y] = coords;
 
-      <h2 className={cnApp('Subtitle')}>Фигурки</h2>
+    const handleMouseClick = (event: MouseEvent<HTMLDivElement>) => {
+        if (!isFormOpen) {
+            setCoords([event.clientX, event.clientY]);
+            setFormOpen(true);
+        }
+    };
 
-      <Figures />
-    </div>
-  )
+    const handleFormClose = () => {
+        setFormOpen(false);
+    };
+
+    return (
+        <div className={cnApp()} onClick={handleMouseClick}>
+            <h1 className={cnApp('Title')}>8.3 Работа с формами в React</h1>
+
+            <h2 className={cnApp('Subtitle')}>Фигурки</h2>
+
+            {isFormOpen && <Icons x={x} y={y} onFormClose={handleFormClose}/>}
+        </div>
+    )
 }
 
 export default App;
