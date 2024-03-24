@@ -30,6 +30,9 @@ const App = () => {
 
             <h2 className={cnApp('Subtitle')}>Фигурки</h2>
 
+            <p>Чтобы добавить фигурку, кликните куда-нибудь и заполните форму.</p>
+            <p>Чтобы удалить — кликните на фигурку.</p>
+
             {isFormOpen && <Icons x={x} y={y} onFormClose={handleFormClose}/>}
         </div>
     )
