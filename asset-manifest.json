@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/working-with-forms-hw-1/static/css/main.b3ef8c25.css",
-    "main.js": "/working-with-forms-hw-1/static/js/main.23e417bf.js",
+    "main.css": "/working-with-forms-hw-1/static/css/main.017593f8.css",
+    "main.js": "/working-with-forms-hw-1/static/js/main.2c1761dd.js",
     "index.html": "/working-with-forms-hw-1/index.html",
-    "main.b3ef8c25.css.map": "/working-with-forms-hw-1/static/css/main.b3ef8c25.css.map",
-    "main.23e417bf.js.map": "/working-with-forms-hw-1/static/js/main.23e417bf.js.map"
+    "main.017593f8.css.map": "/working-with-forms-hw-1/static/css/main.017593f8.css.map",
+    "main.2c1761dd.js.map": "/working-with-forms-hw-1/static/js/main.2c1761dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3ef8c25.css",
-    "static/js/main.23e417bf.js"
+    "static/css/main.017593f8.css",
+    "static/js/main.2c1761dd.js"
   ]
 }
