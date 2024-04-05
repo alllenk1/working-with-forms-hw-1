@@ -1,2 +1,3 @@
 import { cn } from "@bem-react/classname";
-export const cnForm = cn('Form');
+
+export const cnIcon = cn('Icon');
