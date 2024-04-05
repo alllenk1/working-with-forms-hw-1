@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/working-with-forms-hw-1/static/css/main.017593f8.css",
-    "main.js": "/working-with-forms-hw-1/static/js/main.2c1761dd.js",
+    "main.js": "/working-with-forms-hw-1/static/js/main.28530340.js",
     "index.html": "/working-with-forms-hw-1/index.html",
     "main.017593f8.css.map": "/working-with-forms-hw-1/static/css/main.017593f8.css.map",
-    "main.2c1761dd.js.map": "/working-with-forms-hw-1/static/js/main.2c1761dd.js.map"
+    "main.28530340.js.map": "/working-with-forms-hw-1/static/js/main.28530340.js.map"
   },
   "entrypoints": [
     "static/css/main.017593f8.css",
-    "static/js/main.2c1761dd.js"
+    "static/js/main.28530340.js"
   ]
 }
