@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import type { MouseEvent, FC } from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCat, faDog, faHippo, faShrimp, faWorm, faFrog, faOtter, faKiwiBird, faDove,
-         faCrow, IconDefinition } from "@fortawesome/free-solid-svg-icons";
+         faCrow, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 import { cnIcon } from './Icon.classname';
 import { IconProps } from '../../types';
@@ -26,6 +26,8 @@ const Icon: FC<IconProps> = ({ params }) => {
     const [showIcon, setShowIcon] = useState(true);
 
     const handleIconDelete = (event: MouseEvent<SVGSVGElement>) => {
+        event.stopPropagation();
+
         setShowIcon(false);
     }
 

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import type { MouseEvent } from "react";
+import type { MouseEvent } from 'react';
 
 import { cnApp } from './App.classname';
 import { Form } from './components/Form/Form';
@@ -22,7 +22,7 @@ const App = () => {
     const handleMouseClick = (event: MouseEvent) => {
         if (!isFormOpen) {
             setFormOpen(true);
-            setCoords({x: event.clientX, y: event.clientY});
+            setCoords({ x: event.clientX, y: event.clientY });
         }
     }
 
@@ -41,7 +41,7 @@ const App = () => {
             <p>Чтобы удалить — кликните на фигурку.</p>
 
             {isFormOpen && <Form coords={coords} onClose={handleFormClose}/>}
-            {isIconOpen && params.map(param => <Icon params={param}/>)}
+            {isIconOpen && params.map(param => <Icon key={`${param.x}${param.y}`} params={param} />)}
         </div>
     )
 }
